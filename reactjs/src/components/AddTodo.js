@@ -12,13 +12,13 @@ const AddTodoComponent = ({ todo, add, onEnterKeyPress, onClick, onChange }) => 
         name='todoItem'
         value={todo}
         onChange={onChange}
-        onKeyPress={e => onEnterKeyPress(e, todo)}
+        onKeyPress={e => !!todo && onEnterKeyPress(e, todo)}
         />
       <RaisedButton
         style={rightMargin}
         label="Add Todo"
         primary={true}
-        onClick={() => onClick(todo)}
+        onClick={() => !!todo && onClick(todo)}
         />
     </div>
   )
