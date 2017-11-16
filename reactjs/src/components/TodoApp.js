@@ -6,10 +6,6 @@ import TodoList from "../containers/TodoList.js";
 import { rightMargin } from "./Styles.js";
 
 export default class TodoApp extends Component {
-  state = {
-    todoList: [],
-    todoItem: ""
-  };
 
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
