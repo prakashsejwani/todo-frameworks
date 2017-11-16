@@ -37,7 +37,7 @@ export default class TodoApp extends Component {
             add={this.addTodoToList}
             onEnterKeyPress={this.onEnterKeyPress}
           />
-          <TodoList todos={todoList} />
+          <TodoList />
         </div>
       </div>
     );
