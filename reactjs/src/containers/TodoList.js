@@ -1,15 +1,5 @@
 import { connect } from 'react-redux'
-
-import React from "react";
-const todoListComponent = ({ todos }) => {
-  return (
-    <div>
-      <ul>
-        {todos && todos.map(item => <li key={item}>{item}</li>)}
-      </ul>
-    </div>
-  )
-}
+import TodoListComponent from '../components/TodoList'
 
 const mapStateToProps = state => {
   return {
@@ -20,6 +10,6 @@ const mapStateToProps = state => {
 
 const TodoList = connect(
   mapStateToProps
-)(todoListComponent)
+)(TodoListComponent)
 
 export default TodoList
