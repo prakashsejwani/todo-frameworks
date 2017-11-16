@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import AppBar from "material-ui/AppBar";
 
 import AddTodo from "./AddTodo.js";
-import TodoList from "./TodoList.js";
+import TodoList from "../containers/TodoList.js";
 import { rightMargin } from "./Styles.js";
 
 export default class TodoApp extends Component {

@@ -1,5 +1,6 @@
 import { connect } from 'react-redux'
 
+import React from "react";
 const todoListComponent = ({ todos }) => {
   return (
     <div>
@@ -9,7 +10,6 @@ const todoListComponent = ({ todos }) => {
     </div>
   )
 }
-
 
 const mapStateToProps = state => {
   return {
