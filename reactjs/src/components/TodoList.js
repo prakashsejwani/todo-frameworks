@@ -1,11 +1,12 @@
 import React from 'react'
+import {List, ListItem} from 'material-ui/List'
 
 const TodoListComponent = ({ todos }) => (
-  <ul>
+  <List>
     {todos.map(item => (
-			<li key={item}>{item}</li>
+			<ListItem key={item}>{item}</ListItem>
     ))}
-  </ul>
+  </List>
 )
 
 export default TodoListComponent;
