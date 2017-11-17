@@ -1,13 +1,20 @@
 import React, { Component } from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import AppBar from "material-ui/AppBar";
 
-import TodoApp from './components/TodoApp.js'
+import AddTodo from "./containers/AddTodo.js";
+import TodoList from "./containers/TodoList.js";
+import { rightMargin } from "./components/Styles.js";
 
 class App extends Component {
   render() {
     return (
     <MuiThemeProvider>
-      <TodoApp />
+      <AppBar title="Todo App" />
+      <div style={rightMargin}>
+        <AddTodo />
+        <TodoList />
+      </div>
     </MuiThemeProvider>
     );
   }
