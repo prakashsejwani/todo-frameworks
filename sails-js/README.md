@@ -1,3 +1,3 @@
-# todo-nodejs-sails
+# sails-js
 
 a [Sails](http://sailsjs.org) application
